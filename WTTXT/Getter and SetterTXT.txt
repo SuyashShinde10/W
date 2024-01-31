@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> </title>
+    <script>
+        class Person
+        {
+            constructor (name)
+            {
+                this.name= name;
+            }
+            get personName(){
+            return this.name;
+        }
+            set personName(x){
+             this.name = x;
+            }
+        }
+        let Person1 = new Person('Amey');
+        window.alert(Person1.name);
+        window.alert(Person1.personName);
+        Person1.personName="Ajay";
+        window.alert(Person1.personName);
+        
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

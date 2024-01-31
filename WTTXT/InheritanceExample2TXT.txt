@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Java Inheritance</title>
+    
+</head>
+
+<body>
+    <center>
+    <h1>Employee Info</h1>
+    <p id="demo"></p>
+    <script>
+         class Employee 
+         {
+             constructor(id,first,last,add)
+             {
+                 this.id=id;
+                 this.fname=first;
+                 this.lname=last;
+                 this.address=add;
+                  
+             }
+             present()
+             {
+                 return 'Employee id is:' + this.id+""+'<br>Employee name is:'+this.fname+ ""+ this.lname+""+'<br>Employee address is:'+this.address;
+             }
+         }
+         class Manager extends Employee
+         {
+             constructor(id,first,last,add,post)
+             {
+                 super(id,first,last,add);
+                 this.post=post;
+                  
+             }
+             show()
+             {
+                return this.present()+'<br>Employee post is:' +   this.post;
+             }
+         }
+         const myInfo = new Manager("1","Ramesh","Rane","Ratnagiri","Project Manager");
+         document.getElementById("demo").innerHTML=myInfo.show();
+    </script>
+     </center>
+</body>
+
+</html>

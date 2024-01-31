@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./btn.css">
+        <script src="https://kit.fontawesome.com/3136d90953.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="containe bg-primary text-white " style="min-height:200px">
+        <h1 style="font-size: 80px;"" id="head">This is Sample text</h1>
+
+    </div>
+    <div class="container text-center" style="padding: 20 px;">
+        <button onclick="document.getElementById('head').style.backgroundColor='red'" class ="btn btn-danger btn1" > Bg Color
+        </button>
+        <button onclick="document.getElementById('head').style.color='black'"class ="btn btn-danger btn1" > Change color 
+        </button>
+        <button onclick="document.getElementById('head').style.textAlign='left'" class ="btn btn-danger btn1" > left align  
+        </button>
+        <button onclick="document.getElementById('head').style.textAlign='center'" class ="btn btn-danger btn1" > center
+        </button>
+        <button onclick="document.getElementById('head').style.textAlign='right'" class ="btn btn-danger btn1" > right align 
+        </button>
+        <button onclick="document.getElementById('head').style.opacity='0.5'" class ="btn btn-danger btn1" >opacity
+        </button>
+        <button onclick="document.getElementById('head').style.fontWeight='bold'" class ="btn btn-danger btn1" > bold
+        </button>
+        <button onclick="document.getElementById('head').style.fontWeight='italic'" class ="btn btn-danger btn1" > italic
+        </button>
+        <button onclick="document.getElementById('head').style.display='none'" class ="btn btn-danger btn1" > hide
+        </button>
+        <button onclick="document.getElementById('head').style.display='block'" class ="btn btn-danger btn1" > show
+        </button>
+            
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Java Inheritance</title>
+    
+</head>
+
+<body>
+    <h1>Student Info</h1>
+    <p id="demo"></p>
+    <script>
+         class Person 
+         {
+             constructor(first,last)
+             {
+                 this.name1=first;
+                 this.name2=last;
+             }
+             present()
+             {
+                 return 'My name is' + this.name1 + this.name2;
+             }
+         }
+         class Student extends Person
+         {
+             constructor(collage,course)
+             {
+                 super(collage);
+                 this.course=course;
+             }
+             show()
+             {
+                 return this.present()+'and my college name is' + this.collage + ',i choose' + this.course + 'course.';
+             }
+         }
+         const Student = new Student("Suyash","Shinde","FAMT","MCA");
+         document.getElementById("demo").innerHTML=Student.show();
+    </script>
+     
+</body>
+
+</html>

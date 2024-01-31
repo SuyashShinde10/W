@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
+    </head>   
+    <body>
+     <h1>java String</h1>
+    <p id = demo></p>
+    <p id = demo1></p>
+    <p id = demo2></p>
+    <p id = demo3></p>
+        <script>
+            let text = "Jailer,Jawan,OMG2"
+            let part=text.slice(7,13);
+            let part1=text.slice(-5);
+            let part2=text.slice(0,6);
+            document.getElementById("demo").innerHTML= part;
+            document.getElementById("demo1").innerHTML=part1;
+            document.getElementById("demo2").innerHTML= text.substring(7,13);
+            document.getElementById("demo3").innerHTML= part2;
+         </script>
+
+         <button onclick="myFunction()">Try it</button>
+         <p id ="p5"> Please visit Nirma</p>
+         
+         <script>
+            function myFunction ()
+            {
+                let text1 = document.getElementById ("p5").innerHTML;
+                document.getElementById("p5").innerHTML= text1.replace("Nirma","HUL")
+            }
+         </script>
+    </body>
+</html>

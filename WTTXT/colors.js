@@ -1,0 +1,13 @@
+angular.module('firstapp',[]).controller('firstctrl',($scope)=>
+{
+    $scope.colors=[
+        'red',
+        'blue',
+        'purple',
+        'orange',
+        'black',
+        'yellow',
+        'green',
+        'white'
+    ];
+});

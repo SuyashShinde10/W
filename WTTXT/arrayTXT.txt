@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
+    </head>   
+    <body>
+    <h1 style = "background-color: rgb(255, 0, 64);color: aliceblue;text-align: center;">array strings</h1>
+    <h4> before push opereation:<span id = "demo1"></span></h4>
+    <h4> After push opereation:<span id = "dem2"></span></h4>
+    <h4> before POP opereation:<span id = "demo3"></span></h4>
+    <h4> Join opereation:<span id = "demo4"></span></h4>
+    <h4> before Delete opereation:<span id = "demo5"></span></h4>
+    <h4> before Sort opereation:<span id = "demo6"></span></h4>
+    <script>
+        var cars = new Array("Supra","Urus","Bugati Sheryon","Nissan GTR");
+        document.getElementById("demo1").innerHTML=cars;
+
+        cars.push("Aston Martin");
+        document.getElementById("demo2").innerHTML=cars;
+
+        cars.pop();
+        document.getElementById("demo3").innerHTML=cars;
+
+        document.getElementById("demo4").innerHTML=cars.join("*");
+
+        delete cars[0];
+        document.getElementById("demo5").innerHTML=cars;
+
+        cars.sort();
+        document.getElementById("demo6").innerHTML=cars;
+
+         </script>
+    </body>
+</html>

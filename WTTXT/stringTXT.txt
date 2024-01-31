@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
+    </head>   
+    <body>
+     <h1>java String</h1>
+    <p id = demo></p>
+    <p id = demo1></p>
+    <p id = demo2></p>
+    <p id = demo3></p>
+        <scipt>
+            let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            let texet 1="We are so called \"Tamils\" from south.";
+            document.getElementById("demo").innerHTML=text.length;
+            document.getElementById("demo1").innerHTML=text1;
+
+            let x = "amey";
+            let y = new String("amey");
+            
+            document.getElementById("demo2").innerHTML= 
+            typeof x + "<br>" + typeof y;
+            document.getElementById("demo3").innerHTML= (x==y);
+         </scipt>
+    </body>
+</html>
