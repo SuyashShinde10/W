@@ -1,0 +1,14 @@
+<h1>Register</h1>
+
+<form action="formsubmit" method="get">
+    <input type = "text" placeholder="Enter Name" name="name">
+    <br>
+    <input type = "text" placeholder="Enter City" name="city">
+    <br>
+    <input type = "submit">
+    
+
+
+
+
+</form>
