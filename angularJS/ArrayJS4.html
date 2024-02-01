@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="">
+
+        <input type="text"   ng-model="name1"  placeholder="Enter your Name"><br>
+        <h1>Output:{{name1 | upprecase}}</h1>
+        <h1>Output:{{name1 | lowercase}}</h1>
+
+        <input type="text"   ng-model="name2"  placeholder="Enter your Ammount"><br>
+        <h1>Output:{{name2 | currency}}</h1>
+
+    </div>
+</body>
+</html>

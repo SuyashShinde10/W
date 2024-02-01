@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the table to change the sorting order:</p>
+    <div ng-app="ap1" ng-controller="ctrl1">
+
+        <table border="1" width="100%">
+            <tr>
+                <th ng-click="orderByMe('name')">Name</th>
+                <th ng-click="orderByMe('city')">City</th>
+            </tr>
+            <tr ng-repeat="x in names | orderBy:myOrderBy">
+            
+                <td>{{x.name}}</td>
+                <td>{{x.city}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        angular.module('ap1',[]).controller('ctrl1',function($scope){
+            $scope.names=[
+                {name:'Aniket',city:'Malvan'},
+                {name:'Tushar',city:'sawantvadi'},
+                {name:'Bhavika',city:'kasal'},
+                {name:'yash',city:'kankavli'},
+                {name:'Sagar',city:'katta'},
+                {name:'vishakha',city:'kudal'},
+                {name:'bhavana',city:'sion'},
+                {name:'vishal',city:'malad'},
+                {name:'Rushikesh',city:'bandra'},
+                {name:'Nikhil',city:'churchgate'},
+                {name:'trupti',city:'pune'},
+                {name:'Pranit',city:'kolhapur'},
+                {name:'Kunal',city:'vengurla'},
+                {name:'Nitant',city:'belapur'}
+            ];
+            $scope.orderByMe=function(x){
+                $scope.myOrderBy=x;
+            }
+        });
+
+    </script>
+</body>
+</html>

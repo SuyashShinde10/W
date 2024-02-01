@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="">
+        <lable for="fname">First name:<input type="text" id="fname" ng-model="firstname"></lable><br>
+        <lable for="lname">lastname name:<input type="text" id="lname" ng-model="lastname"><br></lable>
+        <lable for="add">Enter address:<input type="text" id="add" ng-model="address"><br></lable>
+        <lable for="hra">Enter hra: <input type="number" id="hra" ng-model="hra"></lable><br>
+        <lable for="fname">Enter da: <input type="number" id="da" ng-model="da"></lable><br>
+        <lable for="fname">Enter basic:<input type="number" id="basic" ng-model="basic"></lable><br>
+        <p>Full Name:{{firstname+""+lastname}}</p>
+        <p>Salary:{{hra+ da+basic}}</p>
+    </div>
+</body>
+</html>
